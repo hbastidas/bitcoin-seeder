@@ -14,7 +14,7 @@ sub go {
   my ($idx) = @_;
 
   my $runs = 0;
-  
+
   my $sock = IO::Socket::INET->new(
     Proto    => 'udp',
     PeerPort => 53,
@@ -44,7 +44,7 @@ sub go {
     $sock->send($msg);
     my $resp;
     $runs++ if ($sock->recv($resp, 512, 0));
-    
+
 #    $sock->close();
   }
   return $runs;

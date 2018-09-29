@@ -82,17 +82,17 @@ public:
           host = optarg;
           break;
         }
-        
+
         case 'm': {
           mbox = optarg;
           break;
         }
-        
+
         case 'n': {
           ns = optarg;
           break;
         }
-        
+
         case 't': {
           int n = strtol(optarg, NULL, 10);
           if (n > 0 && n < 1000) nThreads = n;
