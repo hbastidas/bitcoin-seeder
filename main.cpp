@@ -397,7 +397,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"seed.hbastidas.com.ve",""};
+static const string mainnet_seeds[] = {"seed.onixcoin.com",""};
 static const string testnet_seeds[] = {""};
 static const string *seeds = mainnet_seeds;
 
